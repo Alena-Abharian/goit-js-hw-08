@@ -20,7 +20,7 @@ function onFormSubmit(e) {
 }
 
 function onFormInput(e) {
-  formData[e.target.name] = e.target.value;
+  formData[e.target.name] = e.target.value.trim();
   localStorage.setItem(KEY_LOCAL_STORAGE, JSON.stringify(formData));
 }
 
